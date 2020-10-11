@@ -4,7 +4,6 @@ import './app.css'
 import ToDoList from "./to-do-list";
 import Footer from "./footer";
 
-
 /**
  * The app is responsible for routing and loading the appropriate page within the application
  */

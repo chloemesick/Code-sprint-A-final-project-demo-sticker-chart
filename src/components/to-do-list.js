@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ToDo from "./To-do";
 import "../TodoList.css"
+
+
 function ToDoList() {
   const [tasks, setTasks] = useState([
     "Walk the dogs",
@@ -21,7 +23,6 @@ function ToDoList() {
     }
     setTasks([...tasks, newItemText]);
     event.preventDefault();
-    useState = ("");
 
   };
 
@@ -40,7 +41,8 @@ function ToDoList() {
       <button onClick={onButtonClick}>Add Task</button>
       <ul>{taskMarkup}</ul>
     </div>
-  );
-}
+    );
+  
+  };
 
 export default ToDoList;
