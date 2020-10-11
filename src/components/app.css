@@ -1,5 +1,5 @@
 
-.tab-list {  border-bottom: 1px solid #ccc;
+.tab-list {  border-bottom: 1px cornsilk;
     padding-left: 0;
   }
   
@@ -11,7 +11,7 @@
   }
   
   .tab-list-active {
-    background-color: white;
-    border: solid #ccc;
+    background-color: cornsilk;
+    border: solid black;
     border-width: 1px 1px 0 1px;
   }

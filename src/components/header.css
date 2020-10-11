@@ -1,0 +1,11 @@
+.header {
+    /* margin: 0 0 2rem 0;*/
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.header__logo{
+    font-size: 2rem;
+}
+.header__nav {
+    font-size: 1.1rem;
+    }

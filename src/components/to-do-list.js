@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import ToDo from "./To-do";
+import "../TodoList.css"
 function ToDoList() {
-  const [tasks, setTasks] = useState(["Sharks", "Cats", "Fish"]);
+  const [tasks, setTasks] = useState([
+    "Walk the dogs",
+    "Clean the house",
+    "Finish homework",
+  ]);
   const [newItemText, setNewItemText] = useState("");
   const onItemTextChange = (event) => {
     //console.log(event.target.value);
@@ -10,10 +15,14 @@ function ToDoList() {
   console.log(tasks);
 
   const onButtonClick = (event) => {
-    setTasks([...tasks, newItemText]);
-    if (tasks === ""){
-        alert("Please enter a task");
+    if (newItemText === "") {
+      alert("Please enter a task");
+      return;
     }
+    setTasks([...tasks, newItemText]);
+    event.preventDefault();
+    useState = ("");
+
   };
 
   const taskMarkup = tasks.map((task, index) => {
