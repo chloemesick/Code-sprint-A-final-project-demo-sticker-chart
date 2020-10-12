@@ -1,15 +1,10 @@
-import React from 'react'
-
+import React from "react";
 
 function Stickers() {
-    return (
-        <div>
-    
-        </div>
-    )
+  return <div></div>;
 }
 
 export default Stickers;
 
- /* Stickers page will have catalog of available stickers to add to your calendar and completed tasks
+/* Stickers page will have catalog of available stickers to add to your calendar and completed tasks
  */

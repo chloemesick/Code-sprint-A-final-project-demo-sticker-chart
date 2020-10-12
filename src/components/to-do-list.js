@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ToDo from "./To-do";
-import "../TodoList.css"
-
+import "./TodoList.css";
 
 function ToDoList() {
   const [tasks, setTasks] = useState([
@@ -19,11 +18,11 @@ function ToDoList() {
   const onButtonClick = (event) => {
     if (newItemText === "") {
       alert("Please enter a task");
+
       return;
     }
     setTasks([...tasks, newItemText]);
     event.preventDefault();
-
   };
 
   const taskMarkup = tasks.map((task, index) => {
@@ -41,8 +40,7 @@ function ToDoList() {
       <button onClick={onButtonClick}>Add Task</button>
       <ul>{taskMarkup}</ul>
     </div>
-    );
-  
-  };
+  );
+}
 
 export default ToDoList;
